@@ -23,6 +23,18 @@ body {
     flex-direction: column;
     align-items: center;
     gap: 40px;
+    animation: slideInUp 0.5s ease-out;
+}
+
+@keyframes slideInUp {
+    from {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
 }
 
 .album-art {
@@ -112,6 +124,57 @@ body {
     letter-spacing: 1px;
 }
 
+.social-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+}
+
+.social-title {
+    font-size: 16px;
+    font-weight: 400;
+    color: #333333;
+    margin-bottom: 8px;
+    letter-spacing: 1px;
+}
+
+.social-description {
+    font-size: 12px;
+    color: #999999;
+    margin-bottom: 16px;
+    line-height: 1.5;
+    letter-spacing: 1px;
+}
+
+.social-icons {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-icon {
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: opacity 0.2s;
+    text-decoration: none;
+}
+
+.social-icon:hover {
+    opacity: 0.8;
+}
+
+.social-icon img {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+}
+
 @media (max-width: 600px) {
     body {
         justify-content: flex-start;
@@ -141,6 +204,14 @@ body {
 
     .footer-text {
         font-size: 13px;
+    }
+
+    .social-title {
+        font-size: 15px;
+    }
+
+    .social-description {
+        font-size: 11px;
     }
 }
 
