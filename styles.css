@@ -57,8 +57,8 @@ body {
     height: 50%;
     display: flex;
     align-items: flex-end;
-    padding: 20px;
-    font-size: 20px;
+    padding: 22px 22px 20px;
+    font-size: 17px;
     font-weight: 200;
     letter-spacing: 11px;
     color: #ffffff;
@@ -133,7 +133,7 @@ body {
 }
 
 .social-title {
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 400;
     color: #333333;
     margin-bottom: 8px;
@@ -146,6 +146,7 @@ body {
     margin-bottom: 16px;
     line-height: 1.5;
     letter-spacing: 1px;
+    font-weight: 400;
 }
 
 .social-icons {
@@ -184,14 +185,6 @@ body {
         gap: 30px;
     }
 
-    .album-art::before {
-        padding: 16px;
-    }
-
-    .streaming-item {
-        padding: 14px 16px;
-    }
-
     .streaming-item-icon {
         width: 28px;
         height: 28px;
@@ -200,18 +193,6 @@ body {
 
     .streaming-item-name {
         font-size: 15px;
-    }
-
-    .footer-text {
-        font-size: 13px;
-    }
-
-    .social-title {
-        font-size: 15px;
-    }
-
-    .social-description {
-        font-size: 11px;
     }
 }
 
