@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Static Veins - Press Release | Somehow Still</title>
+    <link rel="icon" type="image/png" href="../images/favicon.png">
+    <link rel="stylesheet" href="../styles-press.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+</head>
+<body>
+    <div class="top-bar">
+        <a href="../index.html" class="back-button">← Back</a>
+        <button onclick="downloadPDF()" class="download-button">Download .pdf</button>
+    </div>
+    <div class="container">
+        <div class="release-header">FOR IMMEDIATE RELEASE</div>
+
+        <h1>Static Veins</h1>
+
+        <div class="info-section">
+            <div class="info-row">
+                <span class="info-label">Artist:</span>
+                <span class="info-value">Somehow Still</span>
+            </div>
+            <div class="info-row">
+                <span class="info-label">Single:</span>
+                <span class="info-value">Static Veins</span>
+            </div>
+            <div class="info-row">
+                <span class="info-label">Release Date:</span>
+                <span class="info-value">Nov 21, 2025</span>
+            </div>
+            <div class="info-row">
+                <span class="info-label">Genre:</span>
+                <span class="info-value">Pop-Rock / Indie-Rock / Punk-Influenced</span>
+            </div>
+        </div>
+
+        <div class="content">
+            <p>Static Veins marks the second chapter in Somehow Still's upcoming album Ash & Arc, a record centered on navigating burnout, healing, and emotional renewal. Written during a period where everything felt noisy and overwhelming, the song channels the quiet defiance that emerges when you're pushed past your limits.</p>
+
+            <p>Driven by pulsing guitars and an urgent, punk-inspired energy, Static Veins blends raw emotional intensity with a soaring melodic edge. It captures the tension between exhaustion and resilience, building toward a cathartic release that defines the heart of the project.</p>
+
+            <p>The single is supported by a full rollout: daily previews, lyric videos, behind-the-lyrics content, and a consistent release schedule leading into the album. With its relatable themes and cinematic sound, Static Veins is designed for playlists that highlight emotional intensity, alternative rock energy, and songs built to resonate deeply with listeners navigating their own highs and lows.</p>
+        </div>
+
+        <div class="contact">
+            <p>For playlist consideration, reviews, or interviews, contact:</p>
+            <p><a href="mailto:cortmcginty@gmail.com">cortmcginty@gmail.com</a></p>
+        </div>
+    </div>
+    <script>
+        function downloadPDF() {
+            const element = document.querySelector('.container');
+            const opt = {
+                margin: [20, 20, 20, 20],
+                filename: 'static-veins-press-release.pdf',
+                image: { type: 'jpeg', quality: 0.98 },
+                html2canvas: { scale: 2 },
+                jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait' }
+            };
+            html2pdf().set(opt).from(element).save();
+        }
+    </script>
+</body>
+</html>
+
