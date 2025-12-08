@@ -37,6 +37,67 @@ body {
     }
 }
 
+.christmas-banner {
+    width: 100%;
+    max-width: 500px;
+    display: flex;
+    align-items: center;
+    padding: 16px 20px;
+    background-color: #f5f5f5;
+    border-radius: 12px;
+    text-decoration: none;
+    color: #000000;
+    transition: background-color 0.2s;
+    gap: 16px;
+}
+
+.christmas-banner:hover {
+    background-color: #eeeeee;
+}
+
+.christmas-banner-image {
+    width: 60px;
+    height: 60px;
+    flex-shrink: 0;
+    border-radius: 8px;
+    overflow: hidden;
+    border: 3px solid #ffffff;
+}
+
+.christmas-banner-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.christmas-banner-text {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.christmas-banner-greeting {
+    font-size: 13px;
+    font-weight: 400;
+    color: #666666;
+    letter-spacing: 0.5px;
+}
+
+.christmas-banner-message {
+    font-size: 16px;
+    font-weight: 600;
+    color: #000000;
+    letter-spacing: 0.5px;
+}
+
+.christmas-banner-arrow {
+    width: 20px;
+    height: 20px;
+    color: #999999;
+    flex-shrink: 0;
+}
+
 .album-art {
     width: 100%;
     max-width: 500px;
