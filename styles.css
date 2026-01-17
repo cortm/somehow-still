@@ -24,6 +24,7 @@ body {
     align-items: center;
     gap: 25px;
     animation: slideInUp 0.5s ease-out;
+    padding: 20px;
 }
 
 @keyframes slideInUp {
@@ -98,11 +99,10 @@ body {
     flex-shrink: 0;
 }
 
-.album-art {
+.header-image {
     width: 100%;
-    max-width: 500px;
-    height: 200px;
-    border-radius: 12px;
+    height: 250px;
+    border-radius: 20px;
     overflow: hidden;
     position: relative;
     background-image: url('images/cover.jpg');
@@ -110,7 +110,7 @@ body {
     background-position: center;
 }
 
-.album-art::before {
+.header-image::before {
     content: 'SOMEHOW STILL';
     position: absolute;
     bottom: 0;
@@ -145,8 +145,10 @@ body {
     border-bottom: 1px solid #e0e0e0;
 }
 
-.streaming-item:hover {
-    background-color: #f5f5f5;
+@media (hover: hover) {
+    .streaming-item:hover {
+        background-color: #f5f5f5;
+    }
 }
 
 .streaming-item-icon {

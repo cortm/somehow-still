@@ -6,83 +6,10 @@
     <title>Second Wind - Somehow Still</title>
     <link rel="icon" type="image/png" href="../images/favicon.png">
     <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="../styles-track.css">
     <style>
-        body {
-            padding-top: 40px;
-            padding-bottom: 80px;
-        }
-        .album-art-wrapper {
-            width: 100%;
-            max-width: 500px;
-            background-color: #ffffff;
-            padding: 20px;
-            border-radius: 16px;
-            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
-        }
-        
-        .album-art {
-            height: 0;
-            padding-bottom: 100%;
-            position: relative;
-            overflow: hidden;
-            border-radius: 8px;
-        }
-        
-        .album-art video {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-        
-        .album-art-banner {
-            position: absolute;
-            top: 30px;
-            left: 0;
-            background-color: rgba(40, 40, 40, 0.95);
-            padding: 12px 40px 12px 20px;
-            z-index: 2;
-            clip-path: polygon(0 0, 100% 0, calc(100% - 10px) 100%, 0 100%);
-        }
-        
-        .album-art-banner-text {
-            font-size: 20px;
-            font-weight: 700;
-            font-style: italic;
-            color: #ffffff;
-            transform: skewX(5deg);
-        }
-        
-        .album-art-text {
-            position: absolute;
-            bottom: 20px;
-            left: 22px;
-            text-align: left;
-            z-index: 1;
-        }
-        
-        .album-art-title {
-            font-size: 17px;
-            font-weight: 800;
-            color: #ffffff;
-            letter-spacing: 1px;
-            margin-bottom: 4px;
-            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        }
-        
-        .album-art-artist {
-            font-size: 13px;
-            font-weight: 400;
-            color: #ffffff;
-            letter-spacing: 2px;
-            opacity: 0.8;
-            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        }
-        
-        .album-art::before {
-            content: '';
+        .header-background {
+            background-image: url('../images/second-wind.png');
         }
     </style>
     <script type="text/javascript">
@@ -94,15 +21,20 @@
     </script>
 </head>
 <body>
+    <div class="header-wrapper">
+        <div class="header-background"></div>
+    </div>
+    
     <div class="container">
-        
         <div class="album-art-wrapper">
+            <div class="album-art-banner">
+                <div class="album-art-banner-text">Out now!</div>
+            </div>
             <div class="album-art">
-                <video autoplay loop muted playsinline>
-                    <source src="../images/second-wind.mp4" type="video/mp4">
-                </video>
-                <div class="album-art-banner">
-                    <div class="album-art-banner-text">Out now!</div>
+                <div class="album-art-inner">
+                    <video autoplay loop muted playsinline>
+                        <source src="../images/second-wind.mp4" type="video/mp4">
+                    </video>
                 </div>
                 <div class="album-art-text">
                     <div class="album-art-title">Second Wind</div>

@@ -3,9 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Somehow Still</title>
-    <link rel="icon" type="image/png" href="images/favicon.png">
-    <link rel="stylesheet" href="styles.css">
+    <title>Lighthouse Bones - Somehow Still</title>
+    <link rel="icon" type="image/png" href="../images/favicon.png">
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="../styles-track.css">
+    <style>
+        .header-background {
+            background-image: url('../images/lighthouse-bones.png');
+        }
+        
+        .album-art-inner {
+            background-image: url('../images/lighthouse-bones.png');
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
     <script type="text/javascript">
         (function(c,l,a,r,i,t,y){
             c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
@@ -15,29 +27,30 @@
     </script>
 </head>
 <body>
+    <div class="header-wrapper">
+        <div class="header-background"></div>
+    </div>
+    
     <div class="container">
-        
-        <!-- Christmas Banner
-        <a href="christmas/" class="christmas-banner">
-            <div class="christmas-banner-image">
-                <img src="images/when-december-comes-thumbnail.png" alt="When December Comes">
+        <div class="album-art-wrapper">
+            <div class="album-art-banner">
+                <div class="album-art-banner-text">Out now!</div>
             </div>
-            <div class="christmas-banner-text">
-                <div class="christmas-banner-greeting">Merry Christmas!</div>
-                <div class="christmas-banner-message">Hear our Christmas song</div>
+            <div class="album-art">
+                <div class="album-art-inner">
+                </div>
+                <div class="album-art-text">
+                    <div class="album-art-title">Lighthouse Bones</div>
+                    <div class="album-art-artist">Somehow Still</div>
+                </div>
             </div>
-            <svg class="christmas-banner-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <path d="M9 18l6-6-6-6"/>
-            </svg>
-        </a> -->
-        
-        <div class="header-image"></div>
+        </div>
         
         <ul class="streaming-list">
             <li>
                 <a href="https://open.spotify.com/artist/2Aq4kxpeIpszxCKwgoJwae?si=JwadFmXUS7qNFXQQ2MPpKQ" class="streaming-item" target="_blank" rel="noopener noreferrer">
                     <div class="streaming-item-icon">
-                        <img src="images/icon_spotify.svg" alt="Spotify">
+                        <img src="../images/icon_spotify.svg" alt="Spotify">
                     </div>
                     <span class="streaming-item-name">Spotify</span>
                     <svg class="streaming-item-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -48,7 +61,7 @@
             <li>
                 <a href="https://music.apple.com/us/artist/somehow-still/1845544966" class="streaming-item" target="_blank" rel="noopener noreferrer">
                     <div class="streaming-item-icon">
-                        <img src="images/icon_apple.svg" alt="Apple Music">
+                        <img src="../images/icon_apple.svg" alt="Apple Music">
                     </div>
                     <span class="streaming-item-name">Apple Music</span>
                     <svg class="streaming-item-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -59,7 +72,7 @@
             <li>
                 <a href="https://music.amazon.com/artists/B0FVTDH7J1/somehow-still" class="streaming-item" target="_blank" rel="noopener noreferrer">
                     <div class="streaming-item-icon">
-                        <img src="images/icon_amazon.svg" alt="Amazon Music">
+                        <img src="../images/icon_amazon.svg" alt="Amazon Music">
                     </div>
                     <span class="streaming-item-name">Amazon Music</span>
                     <svg class="streaming-item-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -70,7 +83,7 @@
             <li>
                 <a href="https://music.youtube.com/channel/UCO3m26dYdBR_bqlxn2d4Tiw" class="streaming-item" target="_blank" rel="noopener noreferrer">
                     <div class="streaming-item-icon">
-                        <img src="images/icon_youtube.svg" alt="Youtube Music">
+                        <img src="../images/icon_youtube.svg" alt="Youtube Music">
                     </div>
                     <span class="streaming-item-name">Youtube Music</span>
                     <svg class="streaming-item-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -78,21 +91,10 @@
                     </svg>
                 </a>
             </li>
-            <!-- <li>
-                <a href="https://www.deezer.com/us/artist/350420832" class="streaming-item" target="_blank" rel="noopener noreferrer">
-                    <div class="streaming-item-icon">
-                        <img src="images/deezer.svg" alt="Deezer">
-                    </div>
-                    <span class="streaming-item-name">Deezer</span>
-                    <svg class="streaming-item-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <path d="M9 18l6-6-6-6"/>
-                    </svg>
-                </a>
-            </li> -->
             <li>
                 <a href="https://www.pandora.com/artist/somehow-still/AR9pJjd5dxkjrZV" class="streaming-item" target="_blank" rel="noopener noreferrer">
                     <div class="streaming-item-icon">
-                        <img src="images/icon_pandora.svg" alt="Pandora">
+                        <img src="../images/icon_pandora.svg" alt="Pandora">
                     </div>
                     <span class="streaming-item-name">Pandora</span>
                     <svg class="streaming-item-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -104,16 +106,16 @@
     
         <div class="social-section">
             <h2 class="social-title">Follow along</h2>
-            <p class="social-description">New song every week - Don't miss the next one.</p>
+            <p class="social-description">New songs every week – don't miss the next one.</p>
             <div class="social-icons">
                 <a href="https://www.instagram.com/somehowstillmusic/" class="social-icon" target="_blank" rel="noopener noreferrer">
-                    <img src="images/icon_instagram.svg" alt="Instagram">
+                    <img src="../images/icon_instagram.svg" alt="Instagram">
                 </a>
                 <a href="https://www.facebook.com/somehowstillmusic" class="social-icon" target="_blank" rel="noopener noreferrer">
-                    <img src="images/icon_facebook.svg" alt="Facebook">
+                    <img src="../images/icon_facebook.svg" alt="Facebook">
                 </a>
                 <a href="https://www.tiktok.com/@somehowstillmusic" class="social-icon" target="_blank" rel="noopener noreferrer">
-                    <img src="images/icon_tiktok.svg" alt="TikTok">
+                    <img src="../images/icon_tiktok.svg" alt="TikTok">
                 </a>
             </div>
         </div>
