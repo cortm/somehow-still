@@ -168,21 +168,21 @@ body {
     border-radius: 20px;
     overflow: hidden;
     position: relative;
-    background-image: url('images/hereandawake.jpg');
+    background-image: url('images/salii.png');
     background-size: cover;
     background-position: center;
 }
 
 .header-icon {
     position: absolute;
-    top: 11px;
-    right: 20px;
-    width: 40px;
-    height: 40px;
+    bottom: 15px;
+    left: 25px;
+    width: 50px;
+    height: 45px;
     opacity: 0.9;
 }
 
-.header-image::before {
+/* .header-image::before {
     content: 'SOMEHOW STILL';
     position: absolute;
     bottom: 0;
@@ -196,7 +196,7 @@ body {
     letter-spacing: 11px;
     color: #ffffff;
     text-transform: uppercase;
-}
+} */
 
 .streaming-list {
     width: 100%;
